@@ -336,4 +336,8 @@ img.wp-smiley {
     @include box-shadow(none !important);
 }
 
+#disqus_thread {
+    padding: 0 .6em;
+}
+
 @import "desktop";

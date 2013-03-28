@@ -480,6 +480,9 @@ img.wp-smiley {
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
 
+#disqus_thread {
+  padding: 0 .6em; }
+
 @media screen and (min-width: 920px) {
   .page {
     margin: 0 auto;
@@ -499,4 +502,7 @@ img.wp-smiley {
     float: left;
     width: 15%; }
     aside .widget {
-      border: none; } }
+      border: none; }
+
+  #disqus_thread {
+    padding: 0 16px; } }
