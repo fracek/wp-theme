@@ -141,13 +141,14 @@ section[role="main"] {
                 font-variant: small-caps;
                 font-weight: normal;
                 line-height: 1.1em;
+                margin: 0 .6em;
             }
         }
 
         .body {
             overflow: hidden;
 
-            h1, h2, h3, h4, h5, h6, p {
+            h1, h2, h3, h4, h5, h6, p, ul, ol {
                 padding: 0 .6em;
             }
 
@@ -175,6 +176,7 @@ section[role="main"] {
             }
 
             p code, li code, p pre, li pre {
+                color: $fg;
                 font-family: $ff-mono;
                 font-weight: lighter;
                 font-size: .8em;
@@ -196,8 +198,8 @@ section[role="main"] {
                 max-width: 90%;
                 border: 1px solid hsl(0, 0%, 60%);
                 background: hsl(0, 0%, 98%);
-                padding: .4em;
-                @include border-radius(4px);
+                padding: .1em;
+                @include border-radius(3px);
                 @include box-shadow(0px 1px 2px 2px hsla(0, 0%, 0%, .1));
                 display: block;
                 margin: 1em auto;
@@ -222,7 +224,7 @@ section[role="main"] {
             font-size: .8em;
             margin-top: 1.3em;
             text-align: left;
-            padding: 0 .6em;
+            padding: 0 16px;
 
             time {
             }

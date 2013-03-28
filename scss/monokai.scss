@@ -1,9 +1,10 @@
-pre, code {
-    color: hsl(0, 0%, 99%);
-    background-color: hsl(70, 8%, 15%);
-}
 
-.codehilite {
+.codehilite, .highlight {
+    pre, code {
+        color: hsl(0, 0%, 99%);
+        background-color: hsl(70, 8%, 15%);
+    }
+
     .hll { background-color: #49483e }
     .c { color: #75715e } /* Comment */
     .err { color: #960050; background-color: #1e0010 } /* Error */
