@@ -1,0 +1,313 @@
+/*
+ * Theme Name: Cek's
+ * Author: Francesco 'Cek' Ceccon
+ */
+
+@import "compass/reset";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "typography";
+@import "colors";
+@import "monokai";
+
+body {
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: normal;
+    color: $fg;
+    background: $bg;
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+a, a:visited {
+    color: $blue;
+    text-decoration: none;
+
+    @include single-transition(all, .2s, ease-in, 0);
+    &:hover {
+        text-decoration: none;
+        color: #D86563;
+    }
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: normal; /* We use an extra light font as main font */
+}
+
+.page {
+    margin: 0 5%;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    margin-bottom: 2em;
+
+    hgroup {
+        text-align: center;
+
+        img {
+            width: 60px;
+        }
+    }
+
+    h1 {
+        font-size: 2.0em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+}
+
+nav#main-nav {
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    margin: 1em 0;
+
+    ul {
+        list-style-type: none;
+        line-height: 1;
+        font-size: .8em;
+
+        li {
+            display: inline-block;
+            padding-right: 30px;
+            margin: 0 .8em;
+            line-height: 24px;
+            -moz-transition: all .2s ease-out 0s;
+            -webkit-transition: all .2s ease-out 0s;
+
+            a {
+                -moz-transition: all .2s ease-out 0s;
+                -webkit-transition: all .2s ease-out 0s;
+            }
+
+            &:hover a {
+                text-decoration: none;
+                color: #D86563;
+            }
+            &.menu-item-twitter {
+                background: url('images/twitter.png') no-repeat right bottom;
+                &:hover {
+                    background: url('images/twitter.png') no-repeat right top;
+                }
+            }
+
+            &.menu-item-archives {
+                background: url('images/archives.png') no-repeat right bottom;
+                &:hover {
+                    background: url('images/archives.png') no-repeat right top;
+                }
+            }
+
+            &.menu-item-colophon {
+                background: url('images/colophon.png') no-repeat right bottom;
+                &:hover {
+                    background: url('images/colophon.png') no-repeat right top;
+                }
+            }
+
+            &.menu-item-github {
+                background: url('images/github.png') no-repeat right bottom;
+                &:hover {
+                    background: url('images/github.png') no-repeat right top;
+                }
+            }
+        }
+    }
+}
+
+section[role="main"] {
+    article {
+        padding-top: 1em;
+        margin-bottom: 1em;
+        border-top: 2px dotted hsl(0, 0, 85%);
+
+        header {
+            margin-bottom: 1em;
+            h1 {
+                text-align: center;
+                font-size: 2.6em;
+                font-family: $ff-head;
+                font-variant: small-caps;
+                font-weight: normal;
+                line-height: 1.1em;
+            }
+        }
+
+        .body {
+            overflow: hidden;
+
+            h1, h2, h3, h4, h5, h6 {
+                color: $blue;
+                margin: .3em 0;
+                font-family: $ff-head;
+                font-weight: normal;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            p {
+                /*margin: 0 0 0.875em;*/
+                margin: 1em 0;
+            }
+
+            p code, li code, p pre, li pre {
+                font-family: $ff-mono;
+                font-weight: 200;
+                font-size: .8em;
+                background: transparent;
+            }
+
+            pre {
+                margin: 1em 0;
+                padding: .8em;
+                overflow-x: auto;
+                font-family: $ff-mono;
+                font-weight: 200;
+                font-size: .8em;
+                border: 1px solid hsl(0, 0%, 60%);
+                @include border-radius(4px);
+            }
+
+            .highlight { background: transparent; }
+
+            img {
+                max-width: 90%;
+                border: 1px solid hsl(0, 0%, 60%);
+                background: hsl(0, 0%, 98%);
+                padding: .4em;
+                @include border-radius(4px);
+                @include box-shadow(0px 1px 2px 2px hsla(0, 0%, 0%, .1));
+                display: block;
+                margin: 1em auto;
+
+                &.aligncenter, &.alignleft, &.alignright {
+                    margin: 1em auto;
+                }
+            }
+
+            ul {
+                list-style-type: circle;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style-type: decimal;
+                list-style-position: inside;
+            }
+        }
+
+        footer {
+            margin-top: 1.3em;
+            text-align: left;
+            font-size: .8em;
+
+            time {
+            }
+            .post-comments-link {
+            }
+        }
+
+        &.format-aside p, blockquote {
+            border-left: 2px solid $blue;
+            padding-left: .5em;
+            margin-left: .5em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+nav#prev-next {
+    width: 100%;
+
+    .previous {
+        width: 50%;
+        text-align: left;
+        float: left;
+        display: inline-block;
+    }
+    .next {
+        width: 50%;
+        text-align: right;
+        float: right;
+        display: inline-block;
+    }
+}
+
+section p {
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#searchform {
+    margin: 2em auto;
+    width: 21em;
+    display: block;
+
+    input { font-size: 16px };
+
+    input[type="text"] {
+        width: 15em;
+        padding: .2em .4em;
+        border: 1px solid hsl(0, 0%, 70%);
+        @include border-radius(4px 0px 0px 4px);
+    }
+
+    input[type="submit"] {
+        width: 5em;
+        padding: .2em .4em;
+        border: 1px solid hsl(0, 0%, 70%);
+        margin-left: -5px;
+        @include border-radius(0px 4px 4px 0px);
+    }
+}
+
+#archive, #home {
+    ul {
+        list-style-type: none;
+        li {
+            margin: .2em 0;
+        }
+    }
+    span.date {
+        color: hsl(0, 0, 50%);
+        font-size: .8em;
+    }
+}
+
+img.wp-smiley {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline !important;
+    background: transparent !important;
+    border: none !important;
+    @include box-shadow(none !important);
+}
+
+@import "desktop";

@@ -1,0 +1,30 @@
+@media screen and (min-width: 920px) {
+    nav#main-nav {
+        text-align: right;
+        width: 75%;
+        float: right;
+        margin-bottom: 3em;
+    }
+
+    section[role="main"] {
+        clear: both;
+        width: 75%;
+        margin: 0 12.5%;
+
+        article {
+            .body {
+                max-width: 51em;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    aside {
+        float: left;
+        width: 15%;
+
+        .widget {
+            border: none;
+        }
+    }
+}
