@@ -1,4 +1,8 @@
-$bg: hsl(0, 0%, 100%);
+$bg: hsl(50, 40%, 95%);
 $fg: hsl(0, 0%, 15%);
+
+$header: desaturate($bg, 40%);
+
+$white: hsl(0, 0%, 99%);
 
 $blue: hsl(213, 91%, 53%);

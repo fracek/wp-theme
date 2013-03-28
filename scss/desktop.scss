@@ -1,20 +1,20 @@
 @media screen and (min-width: 920px) {
+    .page {
+        margin: 0 auto;
+        width: 45em;
+    }
+
     nav#main-nav {
         text-align: right;
         width: 75%;
         float: right;
-        margin-bottom: 3em;
     }
 
     section[role="main"] {
         clear: both;
-        width: 75%;
-        margin: 0 12.5%;
-
-        article {
-            .body {
-                max-width: 51em;
-                margin: 0 auto;
+        article .body {
+            h1, h2, h3, h4, h5, h6, p {
+                padding: 0 16px;
             }
         }
     }

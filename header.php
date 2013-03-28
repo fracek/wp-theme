@@ -11,17 +11,17 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <div class="page">
-        <header id="header">
-            <nav id="main-nav">
-                <ul class="nav">
-                    <li class="menu-item menu-item-home menu-item-archives">
-                        <a href="<?php echo home_url(); ?>">Home</a>
-                    </li>
-                    <li class="menu-item menu-item-colophon"><a href="/colophon/">Colophon</a></li>
-                    <li class="menu-item menu-item-twitter"><a href="http://twitter.com/fra_cek">Twitter</a></li>
-                    <li class="menu-item menu-item-github"><a href="http://github.com/fracek">GitHub</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section role="main">
+    <div id="wrap">
+        <div class="page">
+            <header id="header">
+                <nav id="main-nav">
+                    <ul class="nav">
+                        <li class="menu-item menu-item-home menu-item-archives">
+                            <a href="<?php echo home_url(); ?>">Home</a>
+                        </li>
+                        <li class="menu-item menu-item-twitter"><a href="http://twitter.com/fra_cek">Twitter</a></li>
+                        <li class="menu-item menu-item-github"><a href="http://github.com/fracek">GitHub</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section role="main">
