@@ -1,5 +1,6 @@
-= TWENTY ELEVEN =
+= Cek's =
 
-* by the WordPress team, http://wordpress.org/
 
-== ABOUT TWENTY ELEVEN ==
+== ABOUT Cek's ==
+
+Used on my blog. http://francesco-cek.com
